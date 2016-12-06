@@ -29,8 +29,8 @@ class ReceiverThread(Thread):
             self.counter += 1
             self.mutex.release()
 
-# LoRaController peer-to-peer test, assuming two devices at /dev/ttyUSB0 and
-# /dev/ttyUSB1
+# LoRaController peer-to-peer test, assuming receiver device on /dev/ttyACM0
+
 if __name__ == "__main__":
     set_debug_level(Level.DEBUG)
 

@@ -33,8 +33,8 @@ class TransmitterThread(Thread):
             r = self.lc.send_p2p(data)
             sleep(3)
 
-# LoRaController peer-to-peer test, assuming two devices at /dev/ttyUSB0 and
-# /dev/ttyUSB1
+# LoRaController peer-to-peer test, assuming sender device at /dev/ttyACM0
+
 if __name__ == "__main__":
     set_debug_level(Level.DEBUG)
 
