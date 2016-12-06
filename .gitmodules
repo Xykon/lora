@@ -1,0 +1,3 @@
+[submodule "rn2483/python-loranode"]
+	path = rn2483/python-loranode
+	url = https://github.com/Xykon/python-loranode.git
