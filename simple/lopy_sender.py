@@ -1,6 +1,6 @@
 import socket
 import time
-
+import binascii
 from network import LoRa
 i = 0
 print("Initializing LoRa module...")
@@ -22,6 +22,6 @@ while (True):
     if (i == 0xff):
         i=0
     lora_sock.send(msg)
-    print("Sent!")
+    print("Sent: ", binascii.hexlify(msg, ' '))
     time.sleep(5)
 
